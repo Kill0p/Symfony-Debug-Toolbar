@@ -3,5 +3,5 @@ Special case showing debug toolbar exception with nginx server configured as rev
 
 
 #### Init
-docker-compose up
-docker-compose exec symfony composer install
+* docker-compose up
+* docker-compose exec symfony composer install
