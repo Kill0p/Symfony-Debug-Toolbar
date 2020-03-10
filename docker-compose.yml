@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+
+  symfony:
+    build: ./symfony
+    volumes:
+      - type: bind
+        source: ./symfony/src
+        target: /app
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "8888:80"
